@@ -8,20 +8,18 @@
 TEST_CASE("Ex1 3x3() ", "[example]")
 {
 	fstream file;
-	streambuf *sbuffer_cout = cout.rdbuf();
-	streambuf *sbuffer_file;
 	int num;
 	int numbers[SIZE][SIZE] = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}};
 
-	file.open("output.txt", ios::in | ios::out);
-	sbuffer_file = file.rdbuf();
-
-	cout.rdbuf(sbuffer_file);
 	printtriangle(numbers, SIZE);
-	cout.rdbuf(sbuffer_cout);
-	file.close();
 
 	file.open("output.txt", ios::in | ios::out);
+	if (!file)
+	{
+		cout << "file open error 2\n";
+		exit(0);
+	}
+	REQUIRE(file);
 	file >> num;
 	REQUIRE(num == 0);
 	file >> num;
