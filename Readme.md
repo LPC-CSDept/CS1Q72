@@ -5,25 +5,25 @@
 
 ---
 
-### Assignment A7-9: Lab 7-11
+### Quiz 7: Question 2
 
-### Open the "main.hpp"
+### Edit the "main.hpp"
 
 > Complete functions
 
 > > To run "main.hpp" locally, you can use the "main.cpp". <br>
 > > g++ --std=c++17 main.cpp <br>
 > > ./a.out
-
+<!-- 
 ### 👓 Watch:
 
-- [Vector Insertion and Deletion [Lab7-11]](https://youtu.be/bu4Ab1UN_m0)
+- [Vector Insertion and Deletion [Lab7-11]](https://youtu.be/bu4Ab1UN_m0) -->
 
 ## You can test your program by typing the command
 
 > make clean <br>
 > make test
 
-### Do not change any files
+### Do not change any file
 
 > if you want to restore all files, just clone again with this assignment link.

@@ -1,22 +1,11 @@
+#include <iostream>
 #include "main.hpp"
+using namespace std;
 
+void printtriangle(int numbers[][3], int);
 int main()
 {
-	const int SIZE = 10;
-	int usernum;
-	vector<int> number(SIZE);
+	int numbers[SIZE][SIZE] = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}};
 
-	srand(time(NULL));
-
-	makeVector(number);
-	printVector(number);
-
-	usernum = getInput();
-	insertVector(number, usernum);
-	printVector(number);
-
-	usernum = getInput();
-	printVector(number);
-	deleteVector(number, usernum);
-	printVector(number);
+	printtriangle(numbers, SIZE);
 }
