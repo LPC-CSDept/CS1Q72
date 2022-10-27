@@ -18,7 +18,7 @@ TEST_CASE("Ex1 3x3() ", "[example]")
 	{
 		cout << "file open error 2\n";
 	}
-	INFO("There no file output.txt");
+	INFO("There is no file output.txt");
 	REQUIRE(file);
 	file >> num;
 	REQUIRE(num == 0);
