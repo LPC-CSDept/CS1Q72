@@ -11,7 +11,7 @@ TEST_CASE("Ex1 3x3() ", "[example]")
 	int num;
 	int numbers[SIZE][SIZE] = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}};
 
-	printtriangle(numbers, SIZE);
+	printtriangle(numbers);
 
 	file.open("output.txt", ios::in | ios::out);
 	if (!file)
